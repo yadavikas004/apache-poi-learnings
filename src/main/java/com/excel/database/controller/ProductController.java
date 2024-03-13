@@ -14,7 +14,6 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/product")
-@CrossOrigin("*")
 public class ProductController {
 
     @Autowired
@@ -29,7 +28,7 @@ public class ProductController {
             this.productService.save(file);
             return ResponseEntity.ok(Map.of("message","File is uploaded and data is saved into db"));
         }
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Please Upload excel file only");
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Please Upload excel file only with one sheet");
     }
 
     @GetMapping("/list")
