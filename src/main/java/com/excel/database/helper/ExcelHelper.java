@@ -107,7 +107,7 @@ public class ExcelHelper {
             row.createCell(2).setCellValue(product.getProductDesc());
             row.createCell(3).setCellValue(product.getProductPrice());
             row.createCell(4).setCellValue(product.getContact());
-            row.createCell(5).setCellValue("Added to database");
+            row.createCell(5).setCellValue("Already Added to database");
         }
 
         // Write failed records with remarks

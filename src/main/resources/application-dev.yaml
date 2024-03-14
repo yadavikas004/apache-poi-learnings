@@ -1,0 +1,13 @@
+##=========================================================================================================================================================
+## SLF4J and SL4J2 LOGGING
+##=========================================================================================================================================================
+logging:
+  level:
+    root: WARN
+    org.springframework.web: ERROR
+    com.excel.database: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} [ %M : %line] - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} [ %M : %line] - %msg%n"
+    dateformat: dd-MM-yyyy HH:mm:ss.SSS
+  file: /home/ubuntu/logs/dev/erp-dev-app.log
